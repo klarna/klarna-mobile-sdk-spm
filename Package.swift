@@ -3,14 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "KlarnaMobileSDK",
+    name: "XCFrameworks",
     products: [
         .library(
             name: "KlarnaMobileSDK",
-            targets: ["KlarnaMobileSDK"]),
-		.library(
-			name: "KlarnaMobileSDK-basic",
-			targets: ["KlarnaMobileSDK-basic"]),
+            targets: ["KlarnaMobileSDK", "KlarnaMobileSDK-basic"]),
     ],
     dependencies: [],
     targets: [
