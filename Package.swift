@@ -7,7 +7,7 @@ let package = Package(
     products: [
         .library(
             name: "KlarnaMobileSDK",
-            targets: ["KlarnaMobileSDK", "KlarnaMobileSDK-basic"]),
+            targets: ["KlarnaMobileSDK"]),
     ],
     dependencies: [],
     targets: [
