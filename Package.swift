@@ -3,19 +3,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "XCFrameworks",
+    name: "KlarnaMobileSDK",
     products: [
-        .library(
-            name: "KlarnaMobileSDK",
-            targets: ["KlarnaMobileSDK"]),
+		.library(
+			name: "KlarnaMobileSDK-basic",
+			targets: ["KlarnaMobileSDK-basic"]),
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(
-            name: "KlarnaMobileSDK",
-            url: "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.0.43/KlarnaMobileSDK-full.xcframework.zip",
-            checksum: "2f099ae5b059cab65281504f2e7d29a4acd43d4d497d61f83277dc52727ec9f3"
-        ),
         .binaryTarget(
             name: "KlarnaMobileSDK-basic",
             url: "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.0.43/KlarnaMobileSDK-basic.xcframework.zip",
