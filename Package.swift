@@ -13,8 +13,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "KlarnaMobileSDK",
-            url: "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.6.11/KlarnaMobileSDK-full.xcframework.zip",
-            checksum: "d525549597e94f7f5ebc2d14640f4d4ca4711b0b3dc18a4899247f7357b781d9"
+            url: "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.6.12/KlarnaMobileSDK-full.xcframework.zip",
+            checksum: "2d0948ce1ea20b79d6d598b2079c29e5a7b5a82ce609cbbb4414441457eb428a"
         )
     ]
 )
