@@ -7,10 +7,16 @@ let package = Package(
     products: [
         .library(
             name: "KlarnaMobileSDK",
-            targets: ["KlarnaMobileSDK"]),
+            targets: ["KlarnaCore", "KlarnaMobileSDK"]
+        ),
     ],
     dependencies: [],
     targets: [
+        .binaryTarget(
+            name: "KlarnaCore",
+            url: "https://x.klarnacdn.net/mobile-sdk/ios/frameworks/KlarnaCore/2.7.1/KlarnaCore.xcframework.zip",
+            checksum: "8847c034d84138ccdcc45086a5321b5f3e660581ed17ec7ae9d5c8e21d5169da"
+        ),
         .binaryTarget(
             name: "KlarnaMobileSDK",
             url: "https://x.klarnacdn.net/mobile-sdk/ios/frameworks/KlarnaMobileSDK/2.7.1/KlarnaMobileSDK.xcframework.zip",
